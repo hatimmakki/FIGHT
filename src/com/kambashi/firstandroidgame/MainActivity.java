@@ -208,8 +208,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void endGame() {
-		status1.setText("GAME OVER.\nYou were shot: " + timesHit1 + " times\nOpponent was shot: " + timesHit2 + " times");
-		status2.setText("GAME OVER.\nYou were shot: " + timesHit2 + " times\nOpponent was shot: " + timesHit1 + " times");
+		status1.setText("GAME OVER.\nYou were shot: " + timesHit1 + " time(s)\nOpponent was shot: " + timesHit2 + " time(s)");
+		status2.setText("GAME OVER.\nYou were shot: " + timesHit2 + " time(s)\nOpponent was shot: " + timesHit1 + " time(s)");
 		Button button = (Button) findViewById(R.id.fire1);
 		button.setVisibility(View.GONE);
 		button = (Button) findViewById(R.id.reload1);
