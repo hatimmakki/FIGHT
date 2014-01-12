@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,54 +9,54 @@
 
     <Button
         android:id="@+id/fire2"
+        style="@style/Button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        style="@style/Button"
-        android:text="@string/fire"
-        android:onClick="fire2" />
+        android:onClick="onClick"
+        android:text="@string/fire" />
 
     <Button
         android:id="@+id/reload2"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
         style="@style/Button"
-        android:text="@string/reload"
-        android:onClick="reload2" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/reload" />
 
     <Button
         android:id="@+id/block2"
+        style="@style/Button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-		style="@style/Button"
-        android:text="@string/block"
-        android:onClick="block2" />
+        android:onClick="onClick"
+        android:text="@string/block" />
 
     <Button
         android:id="@+id/block1"
+        style="@style/Button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        style="@style/Button"
+        android:onClick="onClick"
         android:rotation="180"
-        android:text="@string/block"
-        android:onClick="block1" />
+        android:text="@string/block" />
 
     <Button
         android:id="@+id/reload1"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
         style="@style/Button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
         android:rotation="180"
-        android:text="@string/reload"
-        android:onClick="reload1" />
+        android:text="@string/reload" />
 
     <Button
         android:id="@+id/fire1"
+        style="@style/Button"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        style="@style/Button"
+        android:onClick="onClick"
         android:rotation="180"
-        android:text="@string/fire"
-        android:onClick="fire1" />
+        android:text="@string/fire" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -86,5 +87,115 @@
         android:rotation="180"
         android:text="@string/fight"
         android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/b21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b21"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b22"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b23"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b24"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b25"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status1"
+        android:layout_alignLeft="@+id/b21"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b11"
+        android:layout_alignLeft="@+id/b21"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b12"
+        android:layout_alignLeft="@+id/b21"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b13"
+        android:layout_alignLeft="@+id/b21"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b14"
+        android:layout_alignLeft="@+id/b21"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/b16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b15"
+        android:layout_alignLeft="@+id/b21"
+        android:src="@drawable/bullet"
+        android:visibility="invisible" />
 
 </RelativeLayout>
