@@ -3,6 +3,9 @@
 
     <string name="app_name">firstAndroidGame</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="fight">I\'LL FIGHT YOU.</string>
+    <string name="fire">FIRE</string>
+    <string name="reload">RELOAD</string>
+    <string name="block">BLOCK</string>    
 
 </resources>
