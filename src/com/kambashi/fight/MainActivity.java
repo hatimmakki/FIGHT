@@ -1,4 +1,4 @@
-package com.kambashi.firstandroidgame;
+package com.kambashi.fight;
 
 import android.app.Activity;
 import android.os.Bundle;
